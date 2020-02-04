@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+<body class="container-fluid">
+  <header class='row'>
+    <div class="col-4">
+      <h3>Cheese Count: <span id="count"></span></h3>
+      <p>Click Damage: <span id='clickDam'></span></p>
+    </div>
+
+    <div class="col-8 text-center">
+      <div class="circle" onclick="app.GameController.click()"></div>
+    </div>
+  </header>
+
+
+  <main class='row'>
+    <div class="col-3">
+      <button class="btn btn-danger" onclick="app.GameController.pick()">pick axe</button>
+    </div>
+    <div class="col-3">
+      <button class="btn btn-danger" onclick="app.GameController.cart()">cart</button>
+    </div>
+    <div class="col-3"></div>
+    <div class="col-3"></div>
+  </main>
+
+
+  <script src="/app/main.js" type="module"></script>
+</body>
+</html>
