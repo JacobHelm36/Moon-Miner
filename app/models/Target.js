@@ -5,5 +5,6 @@ export default class Items {
     this.name = data.name
     this.clickDam = data.clickDam
     this.price = data.price
+    this.quantity = data.quantity
   }
 }
