@@ -1,6 +1,6 @@
 .circle{
-  height:300px;
-  width:300px;
+  height:100%;
+  width:100%;
   border-radius: 50%;
 }
 
@@ -14,7 +14,7 @@
 }
 
 img:hover{
-  padding: -10px;
+  padding: 0px;
   box-shadow: 0px 0px 30px aqua;
   animation:
 }
@@ -30,6 +30,11 @@ img:hover{
   clip-path: circle(50%);
 }
 @keyframes UFO {
-  from {background-color: red;}
-  to {background-color: blue;}
+  0%   {background-color:red; left:0px; top:0px;}
+  25%  {background-color:yellow; left:200px; top:0px;}
+  50%  {background-color:blue; left:200px; top:200px;}
+  75%  {background-color:green; left:0px; top:200px;}
+  100% {background-color:red; left:0px; top:0px;}
 }
+
+

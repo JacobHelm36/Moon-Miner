@@ -9,24 +9,27 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 </head>
 <body class="container-fluid bg-dark">
-  <header class='row'>
+  <header class='row pt-5'>
     <div class="col-4">
       <div class="card bg-silver" style="width: 18rem;">
         <div class="card-body">
-          <h5 class="card-title">Cheese Count: <span id="count"></span></h5>
-          <h5 class="card-title">Click Damage: <span id='clickDam'></span></h5>
-          <h5>Picks: <span id="pick-item"></span></h5>
-          <h5>Carts: <span id="cart-item"></span></h5>
+          <p class="card-title">Cheese Count: <span id="count"></span></p>
+          <p class="card-title">Click Damage: <span id='clickDam'></span></p>
+          <p>Picks: <span id="pick-item"></span></p>
+          <p>Carts: <span id="cart-item"></span></p>
         </div>
       </div>
       <h3></h3>
       <p></p>
     </div>
 
-    <div class="col-8 text-center">
+    <div class="col-4 text-center">
       <div>
         <img class="circle" src="moon copy.png" alt="picture of the moon" onclick="app.GameController.click()">
       </div>
+    </div>
+    <div class="col-4">
+      <div class="white"></div>
     </div>
   </header>
 
@@ -38,7 +41,7 @@
     <div class="col-3">
       <button class="btn btn-danger" onclick="app.GameController.cart()">cart</button>
     </div>
-    <div class="col-2 ufo-animation"></div>
+    <div class="col-2"></div>
     <div class="col-3"></div>
   </main>
   <footer>
